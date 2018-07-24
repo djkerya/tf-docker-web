@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+# registry:
+#    image: 127.0.0.1:5000/www
+#    ports:
+#      - '5000:5000'
+ www:
+    image: 127.0.0.1:5000/www
+    build: ./
+    volumes:
+      - ./www:/var/www/html:ro
+#    ports:
+#      - '80:80'
+
+
