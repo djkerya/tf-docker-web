@@ -5,12 +5,11 @@ services:
 #    ports:
 #      - '5000:5000'
  www:
-    image: www
+    image: 127.0.0.1:5000/www
     build: ./
     volumes:
       - ./www:/var/www/html:ro
-      - ./config/nginx:/etc/nginx:ro
-    ports:
-      - '80:80'
+#    ports:
+#      - '80:80'
 
 

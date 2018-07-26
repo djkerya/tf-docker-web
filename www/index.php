@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-//$_ENV["DOCKER_HOST"]="127.0.0.1:2375";
+$_ENV["DOCKER_HOST"]="127.0.0.1:2375";
 //$_ENV["DOCKER_HOST"]="unix:///var/run/docker.sock";
-//$_ENV["DOCKER_TLS_VERIFY"]="flase";
+$_ENV["DOCKER_TLS_VERIFY"]="flase";
 //$_ENV["DOCKER_CERT_PATH"]="";
 //$_ENV["DOCKER_PEER_NAME"]="";
 
