@@ -1,15 +1,17 @@
 version: '3.3'
 services:
-# registry:
-#    image: 127.0.0.1:5000/www
-#    ports:
-#      - '5000:5000'
+ registry:
+    image: registry:2
+    restart: always
+    ports:
+      - '5000:5000'
  www:
     image: www
     build: ./
     volumes:
       - ./www:/var/www/html:ro
       - ./config/nginx:/etc/nginx:ro
+      - ./config/suprtvisorf.conf/:/etc/supervisord/conf.f/supervisord.conf:ro
     ports:
       - '80:80'
 
